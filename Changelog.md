@@ -1,1 +1,2 @@
 - version 1.0.0: Creacion de microservicio
+- Version 1.1.0: Creacion de nuevo endpoint
