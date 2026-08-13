@@ -1,9 +1,11 @@
 package com.example.HolaMundoV1.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 
 
@@ -15,8 +17,8 @@ public class HolaMundoV1Controller {
         return "hola mundo v1.0.0";
     }
 
-    @PostMapping
-    public String HolaMundoPost(){
-        return "hola mundo v1.1.0";
+    @PutMapping
+    public String HolaMundoPut(@RequestBody String body){
+        return "hola mundo v1.0.0 put: " + body;
     }
 }
